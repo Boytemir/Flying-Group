@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Montserrat+Alternates:ital,wght@1,600&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+     font-family: 'Montserrat', sans-serif;
+     line-height: 1.7;
+     color: #fff;
+     background-color: #343a40;
+}
+
+.container{
+    width: 76%;
+    margin: 0 auto;
+}
+
+.nav__container .logo{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: yellow;
+}
+.nav__container .logo span{
+    font-family: 'MonteCarlo', cursiv;
+    font-weight: 900;
+    color: #fff;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+h4{
+    font-size: 1.3rem;
+}
+
+a{
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn{
+    display: inline-block;
+    background: #ffff;
+    color: #343a40;
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-primary{
+    color: #343a40;
+}
+
+/* ================NAVBAR============ */
+
+nav{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+/* change navbar styles scroll using javascript */
+.window-scroll {
+    background: #212529;
+    box-shadow: 0 16px 32px rgba(225, 224, 225, .2);
+    height: 60px;
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    display: none;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.fa-bars, .fa-x {
+    color: #fff;
+}
+
+.nav__menu a{
+    font-size: 14px;
+    transition:  all 0.5s ease;
+    font-weight: 600;
+}
+
+.nav__menu a:hover{
+    color: rgba(225, 225, 225, 0.8);
+}
+
+/* =========HEADER======== */
+
+header {
+    position: relative;
+    top: 80px;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 80px;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+    height: 100%;
+}
+
+.header__left p {
+    margin: 16px 0 36px;
+}
+
+.header__right-img{
+    position: relative;
+}
+
+
+/* ======= CATEGORIES ======== */
+
+.categories {
+    background: #212529;
+    margin-top: 130px;
+    height: 530px;
+}
+
+.categories h1 {
+    line-height: 1;
+    margin-bottom: 48px;
+}
+
+.categories__container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.categories__left {
+    margin-right: 32px;
+}
+
+.categories__left p {
+    margin: 80px 0 48px;
+}
+
+.categories__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.category {
+    background: #313131;
+    padding: 32px;
+    border-radius: 32px;
+    transition: all 0.4s ease;
+}
+
+.category:hover{
+    box-shadow: 0 48px 48px rgba(0, 0, 0, .3);
+    z-index: 1;
+}
+
+/* =======CATEGORY ICON =========== */
+
+.category:nth-child(1) .category__icon {
+    background: #016EB5;
+}
+
+
+.category:nth-child(2) .category__icon {
+    background: chocolate;
+}
+
+.category:nth-child(3) .category__icon {
+    background: crimson;
+}
+
+.category:nth-child(4) .category__icon {
+    background: yellow;
+}
+
+.category:nth-child(4) .category__icon i {
+    color: #000;
+}
+
+.category:nth-child(5) .category__icon {
+    background: green;
+}
+
+.category:nth-child(5) .category__icon i {
+    color: #000;
+}
+
+.category:nth-child(6) .category__icon {
+    background: #00D8FF;
+}
+
+.category__icon {
+    padding: 11px;
+    border-radius: 10px;
+}
+
+.category__icon i {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* =======CATEGORY ICON =========== */
+
+.category h5{
+    margin: 32px 0 16px;
+}
+.category p {
+    font-size: 13px;
+}
+
+
+
+ /* ========POPULAR COURSES ==========  */
+
+ .courses {
+    margin-top: 50px;
+ }
+
+ .courses__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+ }
+
+ .course {
+    background: #313131;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+ }
+
+ .course:hover {
+    background: transparent;
+    border-color: #313131;
+ }
+
+ .course__info{
+    padding: 32px;
+ }
+
+ .course__info p {
+    margin: 18px 0 32px;
+    font-size: 14px;
+ }
+
+
+/* ======== FAQS ==========  */
+.faqs {
+    background: #212529;
+    box-shadow: inset 0 0 48px rgba(0, 0, 0, .5);
+}
+
+
+.faqs__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+
+.faq {
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: fit-content;
+    background: #313131;
+    cursor: pointer;
+}
+
+.faq h4 {
+    font-size: 16px;
+    line-height: 2.2;
+}
+
+.faq__icon {
+    align-self: flex-start;
+    font-size: 18px;
+}
+
+.faq p {
+    margin-top: 12px;
+    display: none;
+}
+
+.faq.open p {
+    display: block;
+}
+
+.fa-plus.minus {
+    transform: rotate(45deg);
+}
+
+/* =========TESTIMONIALS ========= */
+
+.testimonials__container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.testimonial {
+    padding-top: 32px;
+    cursor: grab;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    background: #fff;
+    width: 20px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 16px;
+    border: 16px solid #313131;
+    object-fit: cover;
+}
+
+.avatar img {
+    height: 100%;
+}
+
+.testimonial__info {
+    text-align: center;
+}
+
+.testimonial__body {
+    background: #212529;
+    padding: 32px;
+    margin-top: 48px;
+    position: relative;
+}
+
+.testimonial__body::before {
+    content: "";
+    display: block;
+    background: linear-gradient(135deg, transparent, #212529, #212529, #212529);
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 43%;
+    top: -24px;
+    transform: rotate(45deg);
+}
+
+/* ===========FOOTER =============== */
+footer {
+    background: #212529;
+    padding-top: 80px;
+    font-size: 14px;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+}
+
+.footer__1 p {
+    margin: 16px 0 32px;
+}
+
+.footer__1 .footer__logo {
+    color: yellow;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.footer__1 .footer__logo span {
+    color: #fff;
+    font-family: 'MonteCarlo', cursiv;
+    font-weight: 900;
+}
+
+footer ul li {
+    margin-bottom: 12px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 16px;
+    font-size: 18px;
+    margin-top: 32PX;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 64px;
+    padding: 12px 0;
+    border-top: 1px solid #fff;
+}
+
+
+/* ================ MEDIA QUERIES  TABLETS =========*/
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+
+    /*================ NAVBAR =============== */
+
+    nav button {
+        display: inline-block;
+        background: transparent;
+        font-size: 28px;
+        cursor: pointer;
+        color: #000;
+        border: transparent;
+    }
+
+    nav button#close-menu-btn {
+        display: none;
+    }
+
+    .nav__menu {
+        position: fixed;
+        top: 60px;
+        right: 5%;
+        height: fit-content;
+        width: 288px;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+
+    .nav__menu li {
+        width: 100%;
+        height: 93px;
+        animation: animateNavItem .4s linear forwards;
+        transform-origin: top right;
+        opacity: 0;
+    }
+
+    .nav__menu li:nth-child(2) {
+        animation-delay: .2s;
+    }
+
+    .nav__menu li:nth-child(3) {
+        animation-delay: .4s;
+    }
+
+    .nav__menu li:nth-child(4) {
+        animation-delay: .6s;
+    }
+
+    @keyframes animateNavItem {
+        0%{
+            transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+        }
+        100%{
+            transform: rotateZ(0deg) rotateX(0deg) scale(1);
+            opacity: 1;
+        }
+    }
+
+    .nav__menu li a {
+        background: #212529;
+        box-shadow: -28px 46px 100px rgba(225, 225, 225, .3);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+    }
+    
+    .nav__menu li a:hover {
+        background: #313131;
+
+    }
+
+
+    /* ============HEADER =========== */
+
+    header {
+        height: 52vh;
+        margin-bottom: 64px;
+    }
+
+    .header__container {
+        gap: 0;
+        padding-bottom: 48px;
+    }
+
+    /* ========== CATEGORIES ============== */
+
+    .categories {
+        height: auto;
+    }
+
+    .categories__container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .categories__left {
+        margin-right: 0;
+    }
+
+    /* ======== POPULAR COURSES ========== */
+
+    .courses {
+        margin-top: 0;
+    }
+
+    .courses__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ================FAQS ============ */
+
+    .faqs__container {
+        grid-template-columns: 1fr;
+    }
+     
+    .faq {
+        padding: 24px;
+    }
+
+    /* ======== FOOTER ========= */
+    .footer__container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* ================= MEDIA QUERIES (PHONES) ============ */
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 94%;
+    }
+
+    /* =========NAVBAR======= */
+    .nav__menu {
+        right: 3%;
+    }  
+
+    /* =============HEADER ========= */ 
+    header {
+        height: 100vh;
+    }
+
+    .header__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .header__left p {
+        font-size: 21px;
+    }
+
+    /* =========CATEGORIES======== */
+    .categories__right {
+        grid-template-columns: 1fr 1fr;
+        gap: 11px;
+    }
+
+    .category {
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .category__icon {
+        margin-top: 4px;
+        display: inline-block;
+    }
+
+    /* ========= POPULAR COURSES ========== */
+
+    .courses__container {
+        grid-template-columns: 1fr;
+    }
+
+    /* ========= TESTIMONIALS======= */
+    .testimonial__body {
+        padding: 19px;
+    }
+
+    /* ========== FOOTER ======== */
+    .footer__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .footer__1 p {
+        margin: 16px auto;
+    }
+
+    .footer__socials {
+        justify-content: center;
+    }
+}
